@@ -1,0 +1,42 @@
+.SingleItem {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 245px;
+    flex-grow: 0;
+    margin-bottom: 5%;
+    border: 1px solid silver;
+}
+
+.si-photo {
+    width: 100%;
+}
+
+.si-photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.si-info {
+    width: 92%;
+    padding: 2% 4% 4% 4%;
+}
+
+.sii-title {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sii-desc {
+    font-size: 14px;
+    color: gray;
+}
+
+.si-info button {
+    background-color: rgb(254, 255, 181);
+    border: 1px solid rgb(255, 222, 181);
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+    padding: 5% 0;
+    cursor: pointer;
+}
