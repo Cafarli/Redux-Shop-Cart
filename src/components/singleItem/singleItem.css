@@ -1,7 +1,7 @@
 .SingleItem {
     display: flex;
     flex-direction: column;
-    flex: 1 1 245px;
+    flex: 1 1 225px;
     flex-grow: 0;
     margin-bottom: 5%;
     border: 1px solid silver;

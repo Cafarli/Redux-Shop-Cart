@@ -1,6 +1,9 @@
 import "./singleItem.css";
+import { useDispatch} from "react-redux";
+import { addCartAction } from "../../redux/actions/action";
 
 export default function SingleItem(props){
+    const dispatch = useDispatch();
     return(
         <div className="SingleItem">
             <div className="si-photo">
@@ -10,7 +13,7 @@ export default function SingleItem(props){
                 <p className="sii-title">{props.title}</p>
                 <p className="sii-desc">{props.desc}</p>
                 <p className="sii-price">${props.price}</p>
-                <button>Add to Cart</button>
+                <button onClick={()=>dispatch(addCartAction(props.id, props.title, props.price, props.photo))}>Add to Cart</button>
             </div>
         </div>
     );
